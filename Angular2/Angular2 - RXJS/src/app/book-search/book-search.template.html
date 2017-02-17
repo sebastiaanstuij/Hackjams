@@ -1,0 +1,10 @@
+<div id="search-component">
+  <h4>Search in your library</h4>
+  <input id="search-box" (input)="term$.next($event.target.value)"/>
+  <div>
+    <div *ngFor="let book of books | async"
+         click="gotoDetail(book)" class="search-result">
+      {{book.title}}
+    </div>
+  </div>
+</div>

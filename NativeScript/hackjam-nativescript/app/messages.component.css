@@ -1,0 +1,11 @@
+ListView > StackLayout {
+    padding: 10px;
+}
+
+StackLayout.odd {
+    background-color: aliceblue;
+}
+
+Label {
+    font-weight: bold;
+}

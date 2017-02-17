@@ -1,0 +1,12 @@
+-- todo:
+  -- clone this repo:
+  -- npm install or npm i
+  -- recommended to use atom.io with wallabyjs
+
+-- Gitter for this repo:
+
+-- Pair programming is mandatory :-)
+
+
+// not related to this setup
+-- npm uninstall or npm un

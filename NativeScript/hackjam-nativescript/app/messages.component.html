@@ -1,0 +1,27 @@
+<ActionBar title="Hackages Messenger">
+    <ActionItem
+            (tap)="goToProfile()"
+            text="Profile"
+            ios.systemIcon="11"
+            android.systemIcon="ic_menu_allfriends"
+            tap="onNavBtnTap"></ActionItem>
+
+    <ActionItem (tap)="onAddRoom()"
+                ios.systemIcon="4"
+                ios.position="right"
+                text="new room"
+                android.systemIcon="ic_menu_add"
+                android.position="right"
+
+    ></ActionItem>
+</ActionBar>
+
+<ListView [items]="messages">
+    <template let-item="item" let-i="index" let-odd="odd" let-even="even">
+        <StackLayout orientation="horizontal" [class.odd]="odd" [class.even]="even">
+            <!--<Image src="~/images/room.png" width="72" height="72" margin="3 25 3 3"></Image>-->
+            <Label [text]="item.name" col="1"></Label>
+        </StackLayout>
+    </template>
+</ListView>
+

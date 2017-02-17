@@ -1,0 +1,6 @@
+app/**/*.js
+app/**/*.js.map
+node_modules
+typings
+.DS_Store
+.DS_Store

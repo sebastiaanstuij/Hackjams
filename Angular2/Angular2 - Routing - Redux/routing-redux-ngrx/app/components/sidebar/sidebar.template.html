@@ -1,0 +1,19 @@
+<div>
+    <div [class.filter-is-visible]="!navClosed" class="filter">
+        <form>
+            <div class="filter-block">
+                <h4>Search</h4>
+                <div class="filter-content">
+                    <input #searchTerm
+                        type="search" 
+                        placeholder="title, category..." 
+                        (input)="search(searchTerm.value)"
+                    />
+                </div>
+            </div>
+        </form>
+        <a href="#" class="close" (click)="toggleSideBar()">Close</a>
+    </div>
+
+    <a href="#" class="filter-trigger" (click)="toggleSideBar()">Filters</a>
+</div>

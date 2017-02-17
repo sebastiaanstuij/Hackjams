@@ -1,0 +1,10 @@
+coverage
+node_modules/
+npm-debug.log
+.DS_Store
+esdoc/
+.idea
+test/dist/*
+solutions/
+yarn.lock
+dist

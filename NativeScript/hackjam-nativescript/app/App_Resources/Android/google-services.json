@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "350876348460",
+    "firebase_url": "https://hackages-messenger.firebaseio.com",
+    "project_id": "hackages-messenger",
+    "storage_bucket": "hackages-messenger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350876348460:android:3d392fa05ab1cc33",
+        "android_client_info": {
+          "package_name": "org.nativescript.hackagesmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350876348460-5q4kkv8es86a1ldvjcl9cqqhlggkop3f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbzMLXeTHNf0_-6wU94a7DuLCtOZSpeGM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+<ActionBar title="HackProfile">
+    <NavigationButton text="Back"></NavigationButton>
+    <ActionItem (tap)="onSave()"
+                ios.systemIcon="0"
+                android.systemIcon="ic_menu_save"
+                ios.position="right"></ActionItem>
+</ActionBar>
+<ScrollView>
+
+    <StackLayout>
+        <Image class="imageProfile"
+               [src]="user.image"
+               horizontalAlignment="center"
+               verticalAlignment="top"></Image>
+        <Label text="Choose your avatar" horizontalAlignment="center"></Label>
+        <WrapLayout orientation="horizontal"
+                    margin="5"
+                    translateY="25">
+            <Image *ngFor="let url of randomUrls"
+                   class="imageProfile miniature"
+                   [src]="url"
+                   verticalAlignment="top" (tap)="setUserImage(url)"></Image>
+        </WrapLayout>
+        <StackLayout margin="15" backgroundColor="#f0f8ff">
+            <TextField
+                    [(ngModel)]="user.name"
+                    hint="Your nickname"
+                    margin="10"
+                    horizontalAlignment="center"
+                    row="0">
+            </TextField>
+        </StackLayout>
+
+
+    </StackLayout>
+</ScrollView>

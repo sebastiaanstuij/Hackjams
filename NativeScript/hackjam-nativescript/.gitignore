@@ -1,0 +1,11 @@
+
+.DS_Store
+node_modules/
+platforms/
+plugins/
+
+.idea
+.vscode
+
+*.js
+*.js.map
